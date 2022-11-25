@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회사 소개</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="javascript/jquery-2.2.4.min.js"></script>
+    <script src="javascript/script.js" defer type="text/javascript"></script>
+
+</head>
+<body>
+    <div id="wrap">
+        <div class="top">
+            <div class="logo">
+                <a href="#"><img src="images/logo2.png" alt="로고 이미지"></a>
+            </div>
+            <nav class="menu">
+                <ul class="navi">
+                    <li>
+                        <a href="#">회사소개</a>
+                        <ul class="submenu">
+                            <li><a href="#">기업이념</a></li>
+                            <li><a href="#">오시는길</a></li>
+                            <li><a href="#">회원가입</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    <a href="#">사업영역</a>
+                    <ul class="submenu">
+                        <li><a href="#">주택사업</a></li>
+                        <li><a href="#">건축사업</a></li>
+                        <li><a href="#">인테리어</a></li>
+                    </ul>
+                    </li>
+                    <li>
+                        <a href="#">입주정보</a>
+                        <ul class="submenu">
+                            <li><a href="#">입주단지</a></li>
+                            <li><a href="#">입주캘린더</a></li>
+                            <li><a href="#">입주모임</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">인재채용</a>
+                        <ul class="submenu">
+                            <li><a href="#">직무소개</a></li>
+                            <li><a href="#">채용공고</a></li>
+                            <li><a href="#">기술교육</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+            <section class="content">
+                <img src="images/company.jpg" alt="회사 이미지" width="1920" height="550">
+                <h1>오시는 길</h1>
+                <!-- 지도를 표시할 div 입니다 -->
+                <div id="map" style="width:75%;height:450px;"></div>
+
+                <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4ba44b29dfabd3c113721f624f2ebc03"></script>
+                <script>
+                var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+                    mapOption = { 
+                        center: new kakao.maps.LatLng(37.503032029277755, 126.87915322191853), // 지도의 중심좌표
+                        level: 3 // 지도의 확대 레벨
+                        
+                    };
+                    var markerPosition  = new kakao.maps.LatLng(37.503032029277755, 126.87915322191853); 
+                        // 마커를 생성합니다
+                        var marker = new kakao.maps.Marker({
+                            position: markerPosition
+                        });
+                // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+                var map = new kakao.maps.Map(mapContainer, mapOption); 
+                marker.setMap(map);
+                </script>
+            </section>       
+    </div>
+    
+    <footer>
+        <div class="copy">
+            COPYRIGHT ©	by WEBDESIGN. ALL RIGHTS RESERVED
+        </div>
+    </footer>
+</header>
+
+</body>
+</html>

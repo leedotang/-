@@ -1,0 +1,126 @@
+@charset 'utf-8';
+
+@font-face {
+    font-family: 'OTWelcomeBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeBA.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*, html{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+
+.container{
+    position: relative;
+    cursor: pointer;
+    min-height: 730px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0;
+    /* background-color: antiquewhite; */
+}
+
+
+#navi h1{
+    float: left; 
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.main-nav{
+    position: relative;
+    margin: 10px 0 0 50px;
+    float: left;
+    
+}
+
+.main-nav li{
+    display: inline-block;
+    font-size: 22px;
+    line-height: 8px;
+    margin-top: 20px;
+    margin-left: 180px;
+    font-family: 'OTWelcomeBA';
+
+}
+
+
+
+#business1 {
+    background-image: url('../images/housing.jpg');
+}
+
+#business2 {
+    background-image: url('../images/architecture.jpg');
+}
+#business3 {
+    background-image: url('../images/interior.jpg');
+    width: 100%;
+}
+
+.bg-holder {
+    width: 100%;
+    height: 100%;
+  }
+  
+.container .content{
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+}
+
+.content h1{
+    font-family: 'OTWelcomeBA';
+    color: #fff;
+    font-size: 65px;
+    text-align: center;
+    margin-top: -90px;
+}
+
+
+.content h2{
+    font-family: 'OTWelcomeBA';
+    color: #fff;
+    font-size: 65px;
+    text-align: center;
+    margin-top: -80px;
+}
+
+
+.content h3{
+    font-family: 'OTWelcomeBA';
+    color: #fff;
+    font-size: 65px;
+    text-align: center;
+    margin-top: -20px;
+}
+
+
+.content p{
+    margin-top: 20px;
+    font-family: 'OTWelcomeBA';
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 40px;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    
+}

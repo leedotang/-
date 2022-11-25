@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기업이념</title>
+    <link rel="stylesheet" href="css/vg.css">
+    <link rel="stylesheet" href="css/vegas.min.css">
+</head>
+<body>
+    <div id="content">
+        <h1> 남율 건설 기업 이념</h1>
+        <p>남율건설은 미래를 내다보는 창조적 예지, 미래를 개척하는 적극의지<br>미래를 현실화하는 강인한 추진력을 갖추고 새로운 길을 열어갑니다. <br>
+            변화를 두려워하지 않는 남율건설은 미래를 선도해 나갈 것입니다.
+        </p>
+    </div>
+    <script src="javascript/jquery-2.2.4.min.js"></script>
+    <script src="javascript/vegas.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('body').vegas({
+                slides: [
+                    { src: '/images/1.jpg' },
+                    { src: '/images/2.jpg' },
+                    { src: '/images/3.jpg' },
+                    { src: '/images/4.jpg' }
+                ]
+            });
+        });
+    </script>
+</body>
+</html>

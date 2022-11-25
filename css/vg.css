@@ -1,0 +1,43 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'OTWelcomeBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeBA.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+
+#content{
+    position: absolute;
+    left: 25%;
+    top: 30%;
+    margin-right: 50px;
+    padding: 30px 50px;
+    background: rgba(35, 35, 35, 0.1);
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    font-family: 'OTWelcomeBA', sans-serif;
+    text-shadow: 1px 1px 2px black;
+    font-weight: bold
+}
+
+p{  
+    width: 800px;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    font-family: 'OTWelcomeBA', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 2em;
+    text-shadow: 1px 1px 1px black;
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: white;
+}
